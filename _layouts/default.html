@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    <main class="container">
+      <section class="about">
+        <a href="/"><img src="{{ "/assets/me.jpg" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
+        <h2>{{ site.plainwhite.name }}</h2>
+        <p class="tagline">{{ site.plainwhite.tagline }}</p>
+
+        {% for item in site.data.navigation %}
+        <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+        {% endfor %}
+
+        <ul class="social">
+          <a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
+          <a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
+        </ul>
+      </section>
+      <section class="content">
+        {{ content }}
+      </section>
+    </main>
+  </body>
+</html>

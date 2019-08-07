@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="post-container">
+	<h1 class="page-heading">Portfolio</h1>
+	<div class="post">
+		Checkout my latest projects
+	</div>
+</div>
+
+{%- if site.portfolio.size > 0 -%}
+<ul class="posts">
+	<li>
+		<h1 id="posts-label">projects</h1>
+	</li>
+
+	{%- for project in site.portfolio -%}
+	<li>
+		{%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+		<a class="post-link" href="{{ project.url | relative_url }}">
+			<h2>{{ project.title | escape }}</h2>
+		</a>
+		<div class="post">
+			{%- if site.show_excerpts -%}
+			{{ project.excerpt }}
+			{%- endif -%}
+		</div>
+	</li>
+	{%- endfor -%}
+</ul>
+{%- endif -%}
