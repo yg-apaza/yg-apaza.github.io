@@ -8,9 +8,7 @@ published:  true
 
 Last week, I had the amazing opportunity to attend to Reactive Summit 2017 on Austin, Texas and the previous 3-day workshop: "Lightbend Reactive Architecture".
 
-<!-- General pic of the whole conference -->
-
-<!--## Reactive Summit 2017-->
+![Interesting slide]({{site.baseurl}}/assets/blog/2017-10-25/reactive-summit-2017.jpg#center)
 
 ## Lightbend Reactive Architecture
 
@@ -18,19 +16,8 @@ I'd totally recommend take this course as an introduction to Reactive Microservi
 
 ![Interesting slide]({{site.baseurl}}/assets/blog/2017-10-25/reactive-slide.png)
 
-Facts:
+```
+Reactive programming vs reactive tools: Using reactive tools doesn't make your software reactive.
+```
 
-- I attended to the 3-days workshop: Lightbend Reactive Architecture
-    - Reactive programming vs reactive tools: Using reactive tools doesn't make your software reactive.
-    - CP vs AP (Sharding and CRDT)
-- I attended to the conference:
-    - Registration, exhibition
-    - List some talks: Akka anti-patterns, Mesosphere
-
-<!-- Tengo la certeza de que los 150 participantes aprendieron algo nuevo cada día durante su estancia en la ciudad. -->
-
-<!-- IDEAS:
-# The downside is I cannot attend all of them
-# I'm happy that I had this opportunity
-# Meet mentors (Picture with Tim), Ruchika (Picture with Ruchika)
-# Visit Austin, first international travel -->
+Though I couldn't attend all the talks (some of them were at the same time), I found many of the talks really interesting: Akka anti-patterns, Mesosphere. And I finally could met all my mentors (Tim, Ignasi and James) and my co-intern Ruchika.

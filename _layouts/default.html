@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     {%- include head.html -%}
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css">
   </head>
   <body>
     <main class="container">
       <section class="about">
-        <a href="/"><img src="{{ "/assets/me.jpg" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
+        <a href="/"><img src="{{site.baseurl}}/assets/me.png" alt="{{ site.plainwhite.name }}"></a>
         <h2>{{ site.plainwhite.name }}</h2>
         <p class="tagline">{{ site.plainwhite.tagline }}</p>
 
