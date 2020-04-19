@@ -4,7 +4,6 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yul
         const res = data.items;
         const posts = res.filter(item => item.categories.length > 0);
         var mediumPostList = document.getElementById("medium-posts");
-        console.log(posts)
         posts.forEach((mp) => {
             content = mp.content.replace(/<\/?[^>]+(>|$)/g, "").substring(0,250) + " ...";
             tags = "";
